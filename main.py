@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, Response
 import pandas as pd
 import pickle
 
-output_train_test=pd.read_csv(r'E:\APPLIED AI\ASSIGNMENT\instacart\bbb\output_train_test.csv')
-product_info=pickle.load(open(r'E:\APPLIED AI\ASSIGNMENT\instacart\bbb\product_info','rb'))
+output_train_test=pd.read_csv(r'output_train_test.csv')
+product_info=pickle.load(open(r'product_info','rb'))
 all_order = list(output_train_test.order_id.unique())
 
 app = Flask(__name__)
