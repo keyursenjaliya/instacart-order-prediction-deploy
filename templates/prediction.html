@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> INSTACART MARKET BASKET ANALYSIS </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  ackground-attachment: fixed;
+  background-size: cover;
+
+}
+li{color:blue}
+</style>
+
+<ul>
+    {% for i in data: %}
+   <h1><li>{{ i }}</li></h1>
+    {% endfor %}
+</ul>
+<a href='/'> Back</a>
